@@ -78,29 +78,29 @@ The following five regression algorithms were implemented:
 
 ## 1️⃣ Linear Regression
 - Baseline linear model.
-- 
+  
 - Assumes linear relationship between features and price.
 
 ## 2️⃣ Decision Tree Regressor
 - Captures non-linear relationships.
-- 
+  
 - May overfit without pruning.
 
 ## 3️⃣ Random Forest Regressor
 - Ensemble of decision trees.
-- 
+  
 - Reduces overfitting.
-- 
+  
 - Delivered the best performance.
 
 ## 4️⃣ Gradient Boosting Regressor
 - Sequential boosting approach.
-- 
+  
 - Minimizes prediction errors iteratively.
 
 ## 5️⃣ Support Vector Regressor (SVR)
 - Margin-based regression model.
-- 
+  
 - Requires feature scaling.
 
 ---
@@ -110,9 +110,9 @@ The following five regression algorithms were implemented:
 Each model was evaluated using:
 
 - **R-squared (R² Score).**
-- 
+  
 - **Mean Squared Error (MSE).**
-- 
+  
 - **Mean Absolute Error (MAE).**  
 
 These metrics help measure:
