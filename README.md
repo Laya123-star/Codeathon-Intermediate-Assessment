@@ -53,13 +53,21 @@ This project fulfills the following academic requirements:
 # 🧹 Data Preprocessing Steps
 
 ✔ Dataset loading into Pandas DataFrame.
+
 ✔ Initial exploration (shape, info, summary statistics).
+
 ✔ Missing value verification.
+
 ✔ Duplicate record check.
+
 ✔ Outlier detection using boxplots.
+
 ✔ Feature engineering (brand extraction and cleaning).
+
 ✔ Categorical variable encoding.
+
 ✔ Train–Test split (80–20).
+
 ✔ Feature scaling using `StandardScaler.
 
 ---
@@ -69,25 +77,31 @@ This project fulfills the following academic requirements:
 The following five regression algorithms were implemented:
 
 ## 1️⃣ Linear Regression
-- Baseline linear model
-- Assumes linear relationship between features and price
+- Baseline linear model.
+- 
+- Assumes linear relationship between features and price.
 
 ## 2️⃣ Decision Tree Regressor
-- Captures non-linear relationships
-- May overfit without pruning
+- Captures non-linear relationships.
+- 
+- May overfit without pruning.
 
 ## 3️⃣ Random Forest Regressor
-- Ensemble of decision trees
-- Reduces overfitting
-- Delivered the best performance
+- Ensemble of decision trees.
+- 
+- Reduces overfitting.
+- 
+- Delivered the best performance.
 
 ## 4️⃣ Gradient Boosting Regressor
-- Sequential boosting approach
-- Minimizes prediction errors iteratively
+- Sequential boosting approach.
+- 
+- Minimizes prediction errors iteratively.
 
 ## 5️⃣ Support Vector Regressor (SVR)
-- Margin-based regression model
-- Requires feature scaling
+- Margin-based regression model.
+- 
+- Requires feature scaling.
 
 ---
 
@@ -95,15 +109,19 @@ The following five regression algorithms were implemented:
 
 Each model was evaluated using:
 
-- **R-squared (R² Score)**  
-- **Mean Squared Error (MSE)**  
-- **Mean Absolute Error (MAE)**  
+- **R-squared (R² Score).**
+- 
+- **Mean Squared Error (MSE).**
+- 
+- **Mean Absolute Error (MAE).**  
 
 These metrics help measure:
 
-- Variance explained by the model  
-- Prediction accuracy  
-- Error magnitude  
+- Variance explained by the model.
+  
+- Prediction accuracy.
+
+- Error magnitude.
 
 ---
 
@@ -125,10 +143,13 @@ Key findings:
 
 **Reasons for best performance:**
 
-- Captures complex relationships
-- Reduces variance through ensemble averaging
-- Provides stable and reliable predictions
-- Handles feature interactions efficiently
+- Captures complex relationships.
+  
+- Reduces variance through ensemble averaging.
+  
+- Provides stable and reliable predictions.
+
+- Handles feature interactions efficiently.
 
 ---
 
@@ -138,11 +159,15 @@ Feature importance was extracted using the Random Forest model.
 
 Significant variables influencing car price include:
 
-- Engine size  
-- Curb weight  
-- Horsepower  
-- Car width  
-- Brand  
+- Engine size.
+  
+- Curb weight.
+   
+- Horsepower.
+   
+- Car width.
+  
+- Brand.
 
 This insight helps management understand pricing dynamics in the US market.
 
@@ -152,21 +177,27 @@ This insight helps management understand pricing dynamics in the US market.
 
 Hyperparameter tuning was performed using:
 
-- `Pipeline`
-- `GridSearchCV`
-- 5-Fold Cross Validation
+- `Pipeline.
+  
+- `GridSearchCV.
+  
+- 5-Fold Cross Validation.
 
 Parameters tuned:
 
-- `n_estimators`
-- `max_depth`
-- `min_samples_split`
+- `n_estimators`.
+  
+- `max_depth`.
+  
+- `min_samples_split`.
 
 After tuning:
 
-- R² score improved slightly  
-- Prediction error reduced  
-- Model generalization improved  
+- R² score improved slightly.
+  
+- Prediction error reduced.
+  
+- Model generalization improved.
 
 ---
 
@@ -198,10 +229,10 @@ Car-Price-Prediction-Regression/
 
 # 🚀 How to Run the Project
 
-1. Open the notebook in **Google Colab**
-2. Upload the dataset if required
-3. Run all cells sequentially
-4. Review model comparison results
+1. Open the notebook in **Google Colab**. 
+2. Upload the dataset if required. 
+3. Run all cells sequentially. 
+4. Review model comparison results.
 
 ---
 
@@ -209,15 +240,17 @@ Car-Price-Prediction-Regression/
 
 This project enables management to:
 
-- Identify key pricing drivers
-- Optimize product features
-- Align pricing strategy with market demand
-- Make data-driven business decisions
+- Identify key pricing drivers.
+  
+- Optimize product features.
+  
+- Align pricing strategy with market demand.
+  
+- Make data-driven business decisions.
 
 ---
 
 # 📚 Academic Submission Note
 
 This repository is submitted as part of a Machine Learning module assignment.  
-It demonstrates regression modeling, evaluation, feature analysis, and hyperparameter tuning  
-on a real-world automobile pricing dataset.
+It demonstrates regression modeling, evaluation, feature analysis, and hyperparameter tuning on a real-world automobile pricing dataset.
