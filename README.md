@@ -161,7 +161,7 @@ Significant variables influencing car price include:
    
 - Car width.
   
-- Brand.
+- highwaympg.
 
 This insight helps management understand pricing dynamics in the US market.
 
