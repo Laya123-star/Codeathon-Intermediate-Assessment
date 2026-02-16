@@ -1,21 +1,18 @@
 # 🚗 Car Price Prediction – Regression Model Building
 
-A supervised machine learning project focused on implementing and comparing  
-multiple **regression algorithms** to model and predict car prices in the American market.
+A supervised machine learning project focused on implementing and comparing multiple **regression algorithms** to model and predict car prices in the American market.
 
 ---
 
 ## 📘 Project Overview
 
-This project is based on a business problem where a Chinese automobile company  
-plans to enter the US market and wants to understand:
+This project is based on a business problem where a Chinese automobile company plans to enter the US market and wants to understand:
 
-- Which variables significantly affect car price  
-- How well these variables explain price variation  
-- How pricing strategy can be optimized  
+- Which variables significantly affect car price.
+- How well these variables explain price variation.
+- How pricing strategy can be optimized.
 
-The goal of this project is to build and evaluate multiple regression models  
-to identify the most accurate and reliable model for predicting car prices.
+The goal of this project is to build and evaluate multiple regression models to identify the most accurate and reliable model for predicting car prices.
 
 ---
 
@@ -30,14 +27,14 @@ to identify the most accurate and reliable model for predicting car prices.
 
 The dataset includes attributes such as:
 
-- Engine size
-- Horsepower
-- Fuel type
-- Drive wheel type
-- Car dimensions
-- Brand
-- Mileage
-- Technical specifications
+- Engine size.
+- Horsepower.
+- Fuel type.
+- Drive wheel type.
+- Car dimensions.
+- Brand.
+- Mileage.
+- Technical specifications.
 
 ---
 
@@ -45,14 +42,11 @@ The dataset includes attributes such as:
 
 This project fulfills the following academic requirements:
 
-1. **Loading and Preprocessing (5 marks)**  
-2. **Model Implementation (10 marks)**  
-3. **Model Evaluation (5 marks)**  
-4. **Feature Importance Analysis (2 marks)**  
-5. **Hyperparameter Tuning (2 marks)**  
-6. **Timely Submission (1 mark)**  
-
-**Total: 25 Marks**
+1. **Loading and Preprocessing.**  
+2. **Model Implementation.**  
+3. **Model Evaluation.**  
+4. **Feature Importance Analysis.**  
+5. **Hyperparameter Tuning.** 
 
 ---
 
