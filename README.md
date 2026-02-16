@@ -52,15 +52,15 @@ This project fulfills the following academic requirements:
 
 # 🧹 Data Preprocessing Steps
 
-✔ Dataset loading into Pandas DataFrame  
-✔ Initial exploration (shape, info, summary statistics)  
-✔ Missing value verification  
-✔ Duplicate record check  
-✔ Outlier detection using boxplots  
-✔ Feature engineering (brand extraction and cleaning)  
-✔ Categorical variable encoding  
-✔ Train–Test split (80–20)  
-✔ Feature scaling using `StandardScaler`  
+✔ Dataset loading into Pandas DataFrame.
+✔ Initial exploration (shape, info, summary statistics).
+✔ Missing value verification.
+✔ Duplicate record check.
+✔ Outlier detection using boxplots.
+✔ Feature engineering (brand extraction and cleaning).
+✔ Categorical variable encoding.
+✔ Train–Test split (80–20).
+✔ Feature scaling using `StandardScaler.
 
 ---
 
