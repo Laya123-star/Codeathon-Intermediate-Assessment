@@ -1,250 +1,356 @@
 # 🚗 Car Price Prediction – Regression Model Building
 
-A supervised machine learning project focused on implementing and comparing multiple **regression algorithms** to model and predict car prices in the American market.
+![Python](https://img.shields.io/badge/Python-3.9-blue)
+![Machine Learning](https://img.shields.io/badge/MachineLearning-Regression-orange)
+![Model](https://img.shields.io/badge/Model-RandomForest-green)
+![Platform](https://img.shields.io/badge/Platform-Google%20Colab-yellow)
+
+A supervised machine learning project focused on implementing and comparing multiple **regression algorithms** to predict car prices in the American automobile market.
 
 ---
 
-## 📘 Project Overview
+## 🚀 Run Notebook in Google Colab
 
-This project is based on a business problem where a Chinese automobile company plans to enter the US market and wants to understand:
+Click below to open the notebook:
 
-- Which variables significantly affect car price.
-- How well these variables explain price variation.
-- How pricing strategy can be optimized.
-
-The goal of this project is to build and evaluate multiple regression models to identify the most accurate and reliable model for predicting car prices.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1E6Ly_71RE6L3qYvuHoF_AMV8sBa_gzxZ)
 
 ---
 
-## 📂 Dataset Description
+# 📘 Project Overview
 
-| Component | Description |
-|------------|-------------|
-| Records | 205 cars |
-| Features | 25+ independent variables |
-| Target Variable | `price` |
-| Data Type | Numerical and Categorical |
+This project is based on a business problem where an automobile company plans to enter the US market and aims to understand key factors influencing car prices.
 
-The dataset includes attributes such as:
+The complete pipeline includes:
 
-- Engine size.
-- Horsepower.
-- Fuel type.
-- Drive wheel type.
-- Car dimensions.
-- Brand.
-- Mileage.
-- Technical specifications.
+* Data Cleaning
+  
+* Exploratory Data Analysis (EDA)
+  
+* Feature Engineering
+  
+* Feature Scaling
+  
+* Model Building
+  
+* Model Evaluation
+  
+* Hyperparameter Tuning
+  
+* Model Comparison
 
----
-
-## 🎯 Project Objectives
-
-This project fulfills the following academic requirements:
-
-1. **Loading and Preprocessing.**  
-2. **Model Implementation.**  
-3. **Model Evaluation.**  
-4. **Feature Importance Analysis.**  
-5. **Hyperparameter Tuning.** 
+The goal is to build an accurate regression model to predict car prices and support data-driven pricing strategies.
 
 ---
 
-# 🧹 Data Preprocessing Steps
+# 🎯 Objective
 
-✔ Dataset loading into Pandas DataFrame.
+The main objectives of this project are:
 
-✔ Initial exploration (shape, info, summary statistics).
+🔹 Identify variables affecting car price
 
-✔ Missing value verification.
+🔹 Analyze relationships between features and price
 
-✔ Duplicate record check.
+🔹 Build multiple regression models
 
-✔ Outlier detection using boxplots.
+🔹 Compare model performances
 
-✔ Feature engineering (brand extraction and cleaning).
+🔹 Optimize the best model using hyperparameter tuning
 
-✔ Categorical variable encoding.
+🔹 Provide business insights for pricing strategy
 
-✔ Train–Test split (80–20).
+---
 
-✔ Feature scaling using `StandardScaler.
+# 📂 Dataset Description
+
+| Component       | Description               |
+| --------------- | ------------------------- |
+| Records         | 205 cars                  |
+| Features        | 25+ independent variables |
+| Target Variable | price                     |
+| Data Type       | Numerical and Categorical |
+
+### Key Features:
+
+* Engine size
+  
+* Horsepower
+  
+* Fuel type
+  
+* Drive wheel type
+  
+* Car dimensions
+  
+* Brand
+  
+* Mileage
+  
+* Technical specifications
+
+---
+
+# 🧹 Data Preprocessing
+
+The following preprocessing steps were performed:
+
+✔ Loaded dataset using Pandas
+
+✔ Initial exploration (shape, info, summary statistics)
+
+✔ Handled missing values
+
+✔ Removed duplicate records
+
+✔ Detected and handled outliers
+
+✔ Feature engineering (brand extraction)
+
+✔ Encoded categorical variables
+
+✔ Split dataset into **Training (80%) and Testing (20%)**
+
+✔ Scaled features using **StandardScaler**
+
+---
+
+# 📊 Exploratory Data Analysis (EDA)
+
+Visualizations used:
+
+* Histogram
+  
+* Box Plot
+  
+* Heatmap Correlation
+  
+* Scatter Plot
+
+### Insights:
+
+* Identified strong relationships between engine size, horsepower, and price
+  
+* Detected outliers affecting model performance
+  
+* Understood feature distributions
 
 ---
 
 # 🤖 Regression Models Implemented
 
-The following five regression algorithms were implemented:
+The following models were trained and evaluated:
 
-## 1️⃣ Linear Regression
-- Baseline linear model.
-- Assumes linear relationship between features and price.
-
-## 2️⃣ Decision Tree Regressor
-- Captures non-linear relationships.
-- May overfit without pruning.
-
-## 3️⃣ Random Forest Regressor
-- Ensemble of decision trees.
-- Reduces overfitting.
-- Delivered the best performance.
-
-## 4️⃣ Gradient Boosting Regressor
-- Sequential boosting approach.
-- Minimizes prediction errors iteratively.
-
-## 5️⃣ Support Vector Regressor (SVR)
-- Margin-based regression model.
-- Requires feature scaling.
+* Linear Regression
+  
+* Decision Tree Regressor
+  
+* Random Forest Regressor
+  
+* Gradient Boosting Regressor
+  
+* Support Vector Regressor (SVR)
+  
+* Pruned Decision Tree
 
 ---
 
-# 📊 Model Evaluation Metrics
+# 📊 Model Performance (Before Tuning)
 
-Each model was evaluated using:
+| Model                       | R² Score | MSE    | MAE    |
+| --------------------------- | -------- | ------ | ------ |
+| Random Forest Regressor     | 0.913    | 0.0136 | 0.0882 |
+| Gradient Boosting Regressor | 0.908    | 0.0143 | 0.0838 |
+| Linear Regression           | 0.879    | 0.0189 | 0.1054 |
+| Decision Tree Regressor     | 0.860    | 0.0219 | 0.1062 |
+| Support Vector Regressor    | 0.831    | 0.0263 | 0.1051 |
+| Pruned Decision Tree        | 0.831    | 0.0263 | 0.0958 |
 
-- **R-squared (R² Score).**
-  
-- **Mean Squared Error (MSE).**
-  
-- **Mean Absolute Error (MAE).**  
+✅ **Best Model:** Random Forest Regressor
 
-These metrics help measure:
-
-- Variance explained by the model.
-  
-- Prediction accuracy.
-
-- Error magnitude.
+❌ **Worst Model:** Pruned Decision Tree
 
 ---
 
-# 📈 Model Comparison
+# ⚙️ Hyperparameter Tuning
 
-All models were trained and evaluated on the same dataset.
+* Applied **GridSearchCV**
+  
+* Used **Pipeline** to prevent data leakage
+  
+* Performed **5-Fold Cross Validation**
 
-Key findings:
+### Parameters Tuned:
 
-- Random Forest Regressor achieved the highest R² score.
-- It produced the lowest MSE and MAE.
-- It handled non-linear feature interactions effectively.
+* n_estimators
+  
+* max_depth
+  
+* min_samples_split
 
 ---
 
-# 🏆 Best Performing Model
+# 📊 Model Performance (After Tuning)
 
-### ✅ Random Forest Regressor
+| Model                   | R² Score | MSE    | MAE    |
+| ----------------------- | -------- | ------ | ------ |
+| Random Forest (Untuned) | 0.9129   | 0.0136 | 0.0882 |
+| Random Forest (Tuned)   | 0.9131   | 0.0136 | 0.0847 |
 
-**Reasons for best performance:**
+🏆 **Best Model:** Tuned Random Forest Regressor
 
-- Captures complex relationships.
+### Final Metrics:
+
+* R² Score: **0.9131**
   
-- Reduces variance through ensemble averaging.
+* MSE: **0.0136**
   
-- Provides stable and reliable predictions.
+* MAE: **0.0847**
 
-- Handles feature interactions efficiently.
+✅ Model performance improved after hyperparameter tuning
+
+---
+
+# 🏆 Final Model
+
+✔ **Random Forest Regressor selected**
+
+✔ Optimized using hyperparameter tuning
+
+✔ Provides stable and accurate predictions
 
 ---
 
 # 🔍 Feature Importance Analysis
 
-Feature importance was extracted using the Random Forest model.
+Important features influencing car price:
 
-Significant variables influencing car price include:
-
-- Engine size.
+* Engine size
   
-- Curb weight.
-   
-- Horsepower.
-   
-- Car width.
+* Curb weight
   
-- highwaympg.
+* Horsepower
+  
+* Car width
+  
+* highwaympg
 
-This insight helps management understand pricing dynamics in the US market.
+These features play a major role in determining car pricing strategy.
 
 ---
 
-# ⚙ Hyperparameter Tuning
+# 📊 Evaluation Metrics
 
-Hyperparameter tuning was performed using:
+* R² Score
+  
+* Mean Squared Error (MSE)
+  
+* Mean Absolute Error (MAE)
 
-- `Pipeline.
-  
-- `GridSearchCV.
-  
-- 5-Fold Cross Validation.
+---
 
-Parameters tuned:
+# ⚠️ Limitations
 
-- `n_estimators`.
+* Dataset size is relatively small (205 records)
   
-- `max_depth`.
+* Limited features may not capture all real-world pricing factors
   
-- `min_samples_split`.
-
-After tuning:
-
-- R² score improved slightly.
+* Market dynamics and external economic factors are not included
   
-- Prediction error reduced.
+* Model may not generalize well to different regions or time periods
   
-- Model generalization improved.
+* Performance may vary for unseen or highly diverse car categories
 
 ---
 
 # 🛠 Tech Stack
 
-| Tool | Purpose |
-|------|----------|
-| Python | Programming language |
-| Pandas | Data manipulation |
-| NumPy | Numerical computation |
-| Matplotlib | Visualization |
-| Seaborn | Statistical plotting |
-| Scikit-learn | Machine learning models |
-| Google Colab | Development environment |
+| Tool                 | Purpose                   |
+| -------------------- | ------------------------- |
+| Python               | Programming language      |
+| Pandas               | Data handling             |
+| NumPy                | Numerical computation     |
+| Matplotlib / Seaborn | Visualization             |
+| Scikit-learn         | ML models & preprocessing |
+| Google Colab         | Development               |
 
 ---
 
 # 📁 Repository Structure
 
-```
-Car-Price-Prediction-Regression/
+car-price-prediction/
+
 │
+
 ├── CarPrice_Assignment.csv
+
 ├── Car_Price_Prediction.ipynb
+
 ├── README.md
-```
 
 ---
 
 # 🚀 How to Run the Project
 
-1. Open the notebook in **Google Colab**. 
-2. Upload the dataset if required. 
-3. Run all cells sequentially. 
-4. Review model comparison results.
+### 1️⃣ Open Notebook
+
+Click the **Google Colab link above**
+
+---
+
+### 2️⃣ Install Dependencies
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
+---
+
+### 3️⃣ Run the Notebook
+
+* Execute all cells step-by-step
+  
+* Analyze model performance
 
 ---
 
 # 📌 Business Insight
 
-This project enables management to:
+This project helps:
 
-- Identify key pricing drivers.
+* Identify key drivers of car pricing
   
-- Optimize product features.
+* Optimize product features
   
-- Align pricing strategy with market demand.
+* Support strategic pricing decisions
   
-- Make data-driven business decisions.
+* Enable data-driven business planning
 
 ---
 
-# 📚 Academic Submission Note
+# 👤 Author
 
-This repository is submitted as part of a Machine Learning module assignment.  
-It demonstrates regression modeling, evaluation, feature analysis, and hyperparameter tuning on a real-world automobile pricing dataset.
+**Name:** Laya Mary Joy
+
+**Organization:** Entri Elevate
+
+**Date:** February 14, 2026
+
+---
+
+# ⭐ Acknowledgment
+
+Thanks to **Entri Elevate** for guidance and support.
+
+---
+
+# 📌 Future Improvements
+
+* Use larger and more diverse datasets
+  
+* Include real-time market data
+  
+* Try advanced models (XGBoost, LightGBM)
+  
+* Deploy as a web application
+
+---
