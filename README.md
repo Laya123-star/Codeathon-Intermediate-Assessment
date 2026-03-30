@@ -327,6 +327,12 @@ This project helps:
 
 ---
 
+# 📌 Academic Submission
+
+This project was created as part of a **Machine Learning & Data Science program**, showcasing end-to-end regression modeling, including data preprocessing, EDA, feature engineering, model comparison, and optimization for car price prediction.
+
+---
+
 # 👤 Author
 
 **Name:** Laya Mary Joy
